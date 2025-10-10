@@ -221,7 +221,7 @@ export default function About() {
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 <Coffee className="w-6 h-6" />
-                Buy Me a Coffee
+                Buy Me an Espresso
               </button>
             </form>
           </div>
