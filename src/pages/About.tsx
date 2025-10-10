@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Heart, Shield, Printer, Globe, Sparkles, BookOpen, Info, Wand2, Volume2, Eye, Music, Baby, Bug, Users, Hash } from 'lucide-react';
+import { ArrowLeft, Heart, Shield, Printer, Globe, Sparkles, BookOpen, Info, Wand2, Volume2, Eye, Music, Baby, Bug, Users, Hash, Coffee } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import InfoSection from '../components/InfoSection';
 
@@ -189,13 +189,42 @@ export default function About() {
           </InfoSection>
         </div>
 
-        <div className="mt-12 text-center">
-          <Link
-            to="/portal"
-            className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-          >
-            Start Learning Now
-          </Link>
+        <div className="mt-12 space-y-8">
+          <div className="text-center">
+            <Link
+              to="/portal"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              Start Learning Now
+            </Link>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-8 text-center border-2 border-yellow-200">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Coffee className="w-8 h-8 text-amber-600" />
+              <h2 className="text-2xl font-bold text-gray-800">Support This Project</h2>
+            </div>
+            <p className="text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
+              If you find KinderCasters helpful for your little learners, consider supporting the project with a small contribution. Your support helps keep this resource free and accessible for all families.
+            </p>
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_blank"
+              className="inline-block"
+            >
+              <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL" />
+              <input type="hidden" name="no_recurring" value="0" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <button
+                type="submit"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <Coffee className="w-6 h-6" />
+                Buy Me a Coffee
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
