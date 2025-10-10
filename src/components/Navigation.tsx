@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, BookOpen, Info, Wand2, Menu, X, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Home, BookOpen, Info, Menu, X, MapPin, ChevronDown } from 'lucide-react';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,12 +31,17 @@ export default function Navigation() {
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 hover:scale-105 transition-transform"
+            className="flex items-center gap-2 hover:scale-105 transition-transform"
             aria-label="KinderCasters Home"
           >
-            <Wand2 className="w-6 h-6 sm:w-7 sm:h-7 text-orange-600" />
-            <span className="hidden xs:inline">KinderCasters</span>
-            <span className="xs:hidden">KC</span>
+            <img
+              src="/kindercasterslogo_vectorized.png"
+              alt="KinderCasters Logo"
+              className="h-10 sm:h-12 w-auto"
+            />
+            <span className="hidden sm:inline text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+              KinderCasters
+            </span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
@@ -90,15 +95,6 @@ export default function Navigation() {
                 />
               </div>
             </div>
-
-            <a
-              href="tel:+1-555-123-4567"
-              className="flex items-center gap-2 ml-4 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200"
-              aria-label="Call us"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="hidden lg:inline">Call Us</span>
-            </a>
           </div>
 
           <button
@@ -160,17 +156,6 @@ export default function Navigation() {
                   isActive={isActive('/local-seo')}
                   onClick={closeMobileMenu}
                 />
-              </div>
-
-              <div className="pt-3 border-t border-gray-200">
-                <a
-                  href="tel:+1-555-123-4567"
-                  className="flex items-center gap-3 px-3 py-3 text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-semibold hover:shadow-lg transition-all"
-                  onClick={closeMobileMenu}
-                >
-                  <Phone className="w-5 h-5" />
-                  Call Us: (555) 123-4567
-                </a>
               </div>
             </div>
           </div>
