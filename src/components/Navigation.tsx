@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, BookOpen, Info, Menu, X, MapPin, ChevronDown } from 'lucide-react';
+import { Home, BookOpen, Info, Wand2, Menu, X, MapPin, ChevronDown } from 'lucide-react';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,17 +31,12 @@ export default function Navigation() {
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className="flex items-center gap-2 hover:scale-105 transition-transform"
+            className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 hover:scale-105 transition-transform"
             aria-label="KinderCasters Home"
           >
-            <img
-              src="/kindercasterslogo_vectorized.png"
-              alt="KinderCasters Logo"
-              className="h-10 sm:h-12 w-auto"
-            />
-            <span className="hidden sm:inline text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
-              KinderCasters
-            </span>
+            <Wand2 className="w-6 h-6 sm:w-7 sm:h-7 text-orange-600" />
+            <span className="hidden xs:inline">KinderCasters</span>
+            <span className="xs:hidden">KC</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">

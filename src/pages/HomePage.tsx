@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, BookOpen, Users, Info, Star, Zap, MousePointerClick, Volume2, Printer, Heart, Smile, Baby, Wand2 } from 'lucide-react';
+import { Sparkles, BookOpen, Users, Info, Star, Wand2, Zap, MousePointerClick, Volume2, Printer, Heart, Smile, Baby } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import PageHeader from '../components/PageHeader';
 import FeatureCard from '../components/FeatureCard';
 import InfoSection from '../components/InfoSection';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
@@ -17,34 +18,29 @@ export default function HomePage() {
       <Navigation />
 
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <header className="text-center py-12 animate-fade-in">
-          <div className="flex justify-center mb-6">
-            <img
-              src="/kindercasterslogo_vectorized.png"
-              alt="KinderCasters Logo"
-              className="h-32 md:h-48 w-auto drop-shadow-lg"
-            />
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-red-600 to-rose-600 mb-4 drop-shadow-sm">
-            KinderCasters
-          </h1>
-
-          <p className="text-xl md:text-2xl text-gray-700 font-medium mb-8 flex items-center justify-center gap-2">
-            <Baby className="w-8 h-8 text-orange-600" />
-            Magical Learning for Little Learners
+        <PageHeader
+          icons={[
+            <Sparkles className="w-12 h-12 text-yellow-500 animate-pulse" />,
+            <Wand2 className="w-16 h-16 text-orange-600" />,
+            <Star className="w-12 h-12 text-pink-500 animate-pulse" />
+          ]}
+          title="KinderCasters"
+          subtitle="Magical Learning for Little Learners"
+          subtitleIcons={[
+            <Baby className="w-8 h-8 text-orange-600" />,
             <Smile className="w-8 h-8 text-orange-600" />
-          </p>
-
-          <Link
-            to="/portal"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-          >
-            <Zap className="w-6 h-6" />
-            Enter the Portal
-            <Sparkles className="w-6 h-6" />
-          </Link>
-        </header>
+          ]}
+          action={
+            <Link
+              to="/portal"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              <Zap className="w-6 h-6" />
+              Enter the Portal
+              <Sparkles className="w-6 h-6" />
+            </Link>
+          }
+        />
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           <FeatureCard
