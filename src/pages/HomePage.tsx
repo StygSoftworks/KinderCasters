@@ -4,10 +4,17 @@ import Navigation from '../components/Navigation';
 import PageHeader from '../components/PageHeader';
 import FeatureCard from '../components/FeatureCard';
 import InfoSection from '../components/InfoSection';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import LocalSEOHead from '../components/LocalSEOHead';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
+      <LocalBusinessSchema />
+      <LocalSEOHead
+        title="KinderCasters - Early Literacy & Numeracy for Ages 2-5"
+        description="Interactive flashcards for toddlers and preschoolers. Learn ABCs, 123s, and vocabulary through magical creatures and playful storytelling. Free educational resources for Springfield, IL families."
+      />
       <Navigation />
 
       <div className="max-w-6xl mx-auto px-6 py-12">

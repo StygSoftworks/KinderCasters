@@ -2,10 +2,16 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Heart, Shield, Printer, Globe, Sparkles, BookOpen, Info, Wand2, Volume2, Eye, Music, Baby, Bug, Users, Hash, Coffee } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import InfoSection from '../components/InfoSection';
+import LocalSEOHead from '../components/LocalSEOHead';
+import NAPInfo from '../components/NAPInfo';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
+      <LocalSEOHead
+        title="About KinderCasters"
+        description="Learn about our mission to provide quality early childhood education resources. Serving Springfield, IL families with free interactive flashcards for literacy and numeracy development."
+      />
       <Navigation />
 
       <div className="max-w-4xl mx-auto px-6 py-12">
@@ -227,6 +233,12 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <footer className="bg-gray-800 text-white py-8 mt-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <NAPInfo variant="inline" className="text-gray-300 text-center" />
+        </div>
+      </footer>
     </div>
   );
 }
