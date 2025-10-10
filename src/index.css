@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'IM Fell English SC', serif;
+  }
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .flashcard {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flashcard.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flashcard-back {
+    transform: rotateY(180deg);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .flashcard {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  button[aria-label*="Hear"],
+  button:has(.lucide-arrow-left) {
+    display: none !important;
+  }
+
+  .flashcard-inner {
+    transform: none !important;
+  }
+
+  .flashcard-front {
+    position: relative !important;
+    margin-bottom: 1rem;
+  }
+
+  .flashcard-back {
+    position: relative !important;
+    transform: none !important;
+    display: block !important;
+  }
+}
