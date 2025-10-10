@@ -213,7 +213,7 @@ export default function About() {
               target="_blank"
               className="inline-block"
             >
-              <input type="hidden" name="business" value="collin@stygiansoftworks.com" />
+              <input type="hidden" name="business" value="weatoria@stygiansoftworks.com" />
               <input type="hidden" name="no_recurring" value="0" />
               <input type="hidden" name="currency_code" value="USD" />
               <button
