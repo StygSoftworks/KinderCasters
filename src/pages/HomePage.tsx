@@ -13,7 +13,7 @@ export default function HomePage() {
       <LocalBusinessSchema />
       <LocalSEOHead
         title="KinderCasters - Early Literacy & Numeracy for Ages 2-5"
-        description="Interactive flashcards for toddlers and preschoolers. Learn ABCs, 123s, and vocabulary through magical creatures and playful storytelling. Free educational resources for Springfield, IL families."
+        description="Interactive flashcards for toddlers and preschoolers. Learn ABCs, 123s, and vocabulary through magical creatures and playful storytelling. Free online educational resources available worldwide."
       />
       <Navigation />
 

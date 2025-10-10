@@ -10,7 +10,7 @@ export default function About() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
       <LocalSEOHead
         title="About KinderCasters"
-        description="Learn about our mission to provide quality early childhood education resources. Serving Springfield, IL families with free interactive flashcards for literacy and numeracy development."
+        description="Learn about our mission to provide quality early childhood education resources. Free interactive flashcards for literacy and numeracy development, available worldwide."
       />
       <Navigation />
 

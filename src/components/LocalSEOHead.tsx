@@ -19,7 +19,7 @@ export default function LocalSEOHead({
   useEffect(() => {
     const fullTitle = title.includes(businessInfo.name)
       ? title
-      : `${title} | ${businessInfo.name} - ${businessInfo.address.addressLocality}, ${businessInfo.address.addressRegion}`;
+      : `${title} | ${businessInfo.name}`;
 
     document.title = fullTitle;
 
@@ -49,11 +49,6 @@ export default function LocalSEOHead({
     setMetaTag('description', description);
     setMetaTag('keywords', keywords.join(', '));
 
-    setMetaTag('geo.region', `${businessInfo.address.addressCountry}-${businessInfo.address.addressRegion}`);
-    setMetaTag('geo.placename', businessInfo.address.addressLocality);
-    setMetaTag('geo.position', `${businessInfo.geo.latitude};${businessInfo.geo.longitude}`);
-    setMetaTag('ICBM', `${businessInfo.geo.latitude}, ${businessInfo.geo.longitude}`);
-
     setMetaTag('og:title', fullTitle, true);
     setMetaTag('og:description', description, true);
     setMetaTag('og:type', 'website', true);
@@ -67,12 +62,7 @@ export default function LocalSEOHead({
     setMetaTag('twitter:description', description);
     setMetaTag('twitter:image', ogImage);
 
-    setMetaTag('locality', businessInfo.address.addressLocality);
-    setMetaTag('region', businessInfo.address.addressRegion);
-    setMetaTag('country', businessInfo.address.addressCountry);
-
     setMetaTag('contact', businessInfo.contact.email);
-    setMetaTag('phone', businessInfo.contact.phone);
 
     setLinkTag('canonical', canonical);
   }, [title, description, keywords, ogImage, canonical]);

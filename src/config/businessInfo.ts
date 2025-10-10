@@ -1,19 +1,10 @@
 export const businessInfo = {
   name: "KinderCasters Learning Center",
   legalName: "KinderCasters LLC",
-  description: "Early literacy and numeracy education platform for toddlers and preschoolers ages 2-5. Interactive flashcards featuring magical creatures and playful storytelling.",
-
-  address: {
-    streetAddress: "123 Learning Lane",
-    addressLocality: "Springfield",
-    addressRegion: "IL",
-    postalCode: "62701",
-    addressCountry: "US"
-  },
+  description: "Online early literacy and numeracy education platform for toddlers and preschoolers ages 2-5. Interactive flashcards featuring magical creatures and playful storytelling.",
 
   contact: {
-    phone: "+1-555-123-4567",
-    email: "hello@kindercasters.com",
+    email: "Collin@stygiansoftworks.com",
     website: "https://kindercasters.com"
   },
 
@@ -25,11 +16,6 @@ export const businessInfo = {
     friday: "24/7 Online Access",
     saturday: "24/7 Online Access",
     sunday: "24/7 Online Access"
-  },
-
-  geo: {
-    latitude: "39.7817",
-    longitude: "-89.6501"
   },
 
   social: {
@@ -49,9 +35,6 @@ export const businessInfo = {
   ],
 
   servedAreas: [
-    "Springfield, IL",
-    "Sangamon County, IL",
-    "Central Illinois",
     "Online - Worldwide"
   ],
 
@@ -69,6 +52,7 @@ export const businessInfo = {
     "educational resources",
     "parent resources",
     "teacher resources",
-    "homeschool materials"
+    "homeschool materials",
+    "online learning"
   ]
 };

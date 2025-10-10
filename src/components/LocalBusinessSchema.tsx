@@ -15,28 +15,15 @@ export default function LocalBusinessSchema() {
       "foundingDate": businessInfo.foundingDate,
       "priceRange": businessInfo.priceRange,
 
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": businessInfo.address.streetAddress,
-        "addressLocality": businessInfo.address.addressLocality,
-        "addressRegion": businessInfo.address.addressRegion,
-        "postalCode": businessInfo.address.postalCode,
-        "addressCountry": businessInfo.address.addressCountry
-      },
-
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": businessInfo.geo.latitude,
-        "longitude": businessInfo.geo.longitude
-      },
-
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": businessInfo.contact.phone,
         "contactType": "customer service",
         "email": businessInfo.contact.email,
         "availableLanguage": ["English"],
-        "areaServed": businessInfo.servedAreas
+        "areaServed": {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
       },
 
       "sameAs": [
@@ -66,11 +53,6 @@ export default function LocalBusinessSchema() {
           }
         }))
       },
-
-      "areaServed": businessInfo.servedAreas.map(area => ({
-        "@type": "City",
-        "name": area
-      })),
 
       "keywords": businessInfo.keywords.join(", ")
     };

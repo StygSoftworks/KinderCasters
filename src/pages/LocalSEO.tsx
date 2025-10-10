@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Search, TrendingUp } from 'lucide-react';
+import { ArrowLeft, Globe, Mail } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
 import LocalSEOHead from '../components/LocalSEOHead';
@@ -12,9 +12,9 @@ export default function LocalSEO() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
       <LocalBusinessSchema />
       <LocalSEOHead
-        title="Local SEO & Business Information"
-        description="Find our business information, service areas, and learn how we serve families in Springfield, IL with quality early childhood education resources."
-        keywords={['Springfield IL education', 'local preschool resources', 'Illinois learning center', 'Central Illinois education']}
+        title="Business Information & Contact"
+        description="Learn about KinderCasters Learning Center, a fully online educational platform providing early childhood education resources worldwide."
+        keywords={['online education', 'early childhood learning', 'educational platform', 'online learning resources']}
       />
       <Navigation />
 
@@ -28,11 +28,11 @@ export default function LocalSEO() {
         </Link>
 
         <div className="flex items-center gap-3 mb-8">
-          <Search className="w-10 h-10 text-blue-600" />
+          <Globe className="w-10 h-10 text-blue-600" />
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
-            Local SEO & Business Info
+            Business Info & Contact
           </h1>
-          <TrendingUp className="w-10 h-10 text-cyan-600" />
+          <Mail className="w-10 h-10 text-cyan-600" />
         </div>
 
         <div className="space-y-8">
@@ -52,7 +52,7 @@ export default function LocalSEO() {
           <GoogleBusinessGuide />
 
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-lg p-6 md:p-8 border-2 border-green-200">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Local SEO Implementation Status</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">SEO Implementation Status</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
@@ -61,25 +61,25 @@ export default function LocalSEO() {
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
-                  <span className="text-gray-700">NAP Consistency</span>
+                  <span className="text-gray-700">Business Information</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
-                  <span className="text-gray-700">Local Keywords</span>
+                  <span className="text-gray-700">Educational Keywords</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
-                  <span className="text-gray-700">Geo Meta Tags</span>
+                  <span className="text-gray-700">Meta Tags</span>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
-                  <span className="text-gray-700">Location-Specific Content</span>
+                  <span className="text-gray-700">Content Optimization</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
-                  <span className="text-gray-700">Service Area Definition</span>
+                  <span className="text-gray-700">Global Availability</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">✓</div>
