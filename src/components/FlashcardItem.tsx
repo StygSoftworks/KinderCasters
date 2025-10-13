@@ -8,9 +8,10 @@ interface FlashcardItemProps {
   rhyme: string;
   definition: string;
   color: string;
+  imageUrl?: string;
 }
 
-export default function FlashcardItem({ id, displayText, word, rhyme, definition, color }: FlashcardItemProps) {
+export default function FlashcardItem({ id, displayText, word, rhyme, definition, color, imageUrl }: FlashcardItemProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const toggleFlip = () => {
@@ -37,16 +38,41 @@ export default function FlashcardItem({ id, displayText, word, rhyme, definition
         onClick={toggleFlip}
       >
         <div className="flashcard-inner">
-          <div className={`flashcard-front bg-gradient-to-br ${color} rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col items-center justify-center cursor-pointer border-4 border-white overflow-hidden`}>
-            <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2 break-words text-center">
-              {displayText}
-            </div>
-            <div className="text-lg sm:text-xl md:text-2xl font-semibold text-white drop-shadow text-center break-words px-2">
-              {word}
-            </div>
-            <div className="mt-2 sm:mt-4 text-xs sm:text-sm text-white opacity-75 font-medium">
-              Tap to flip
-            </div>
+          <div className={`flashcard-front bg-gradient-to-br ${color} rounded-2xl shadow-xl overflow-hidden cursor-pointer border-4 border-white relative`}>
+            {imageUrl ? (
+              <div className="relative w-full h-full flex flex-col">
+                <div className="flex-1 relative overflow-hidden">
+                  <img
+                    src={imageUrl}
+                    alt={word}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-gradient-to-t from-black/80 via-black/50 to-transparent absolute inset-0 flex flex-col items-center justify-end p-4 sm:p-6">
+                  <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2 break-words text-center">
+                    {displayText}
+                  </div>
+                  <div className="text-lg sm:text-xl md:text-2xl font-semibold text-white drop-shadow text-center break-words px-2">
+                    {word}
+                  </div>
+                  <div className="mt-2 sm:mt-4 text-xs sm:text-sm text-white opacity-90 font-medium">
+                    Tap to flip
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="w-full h-full p-4 sm:p-6 flex flex-col items-center justify-center">
+                <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2 break-words text-center">
+                  {displayText}
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-white drop-shadow text-center break-words px-2">
+                  {word}
+                </div>
+                <div className="mt-2 sm:mt-4 text-xs sm:text-sm text-white opacity-75 font-medium">
+                  Tap to flip
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="flashcard-back bg-white rounded-2xl shadow-xl p-4 sm:p-6 cursor-pointer border-4 border-gray-200 overflow-hidden">
