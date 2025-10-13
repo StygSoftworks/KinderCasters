@@ -2,9 +2,9 @@
   {
     "id": "c-a",
     "word": "Angel",
-    "card_name": "Angel",
-    "scryfall_uri": "https://scryfall.com/card/ptdmu/2/angel?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/2/7/2709c1bc-c5bd-42b8-9157-cb6e798d99be.jpg?1691646028",
+    "card_name": "Serra Angel",
+    "scryfall_uri": "https://scryfall.com/card/fdn/147/serra-angel?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/3/c/3cee9303-9d65-45a2-93d4-ef4aba59141b.jpg?1730489152",
     "raw_path": "art_raw\\c-a_angel.jpg",
     "webp_path": "art_webp\\c-a_angel.webp",
     "status": "ok"
@@ -12,9 +12,9 @@
   {
     "id": "c-b",
     "word": "Beast",
-    "card_name": "Beast",
-    "scryfall_uri": "https://scryfall.com/card/tkld/1/beast?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/4/d/4de1d095-459f-42fd-9d9f-8f71d002a5b2.jpg?1562639796",
+    "card_name": "Ravenous Baloth",
+    "scryfall_uri": "https://scryfall.com/card/jmp/424/ravenous-baloth?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/2/f/2f48df6c-8d5d-4d8a-b98a-793f6a56184d.jpg?1601079998",
     "raw_path": "art_raw\\c-b_beast.jpg",
     "webp_path": "art_webp\\c-b_beast.webp",
     "status": "ok"
@@ -22,9 +22,9 @@
   {
     "id": "c-c",
     "word": "Cat",
-    "card_name": "Cat",
-    "scryfall_uri": "https://scryfall.com/card/tdmr/3/cat?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/0/5/05a61555-ddb9-4d55-b637-a219d772033d.jpg?1675198619",
+    "card_name": "Savannah Lions",
+    "scryfall_uri": "https://scryfall.com/card/fdn/146/savannah-lions?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/9/c/9c9ac1bc-cdf3-4fa6-8319-a7ea164e9e47.jpg?1731652622",
     "raw_path": "art_raw\\c-c_cat.jpg",
     "webp_path": "art_webp\\c-c_cat.webp",
     "status": "ok"
@@ -32,9 +32,9 @@
   {
     "id": "c-d",
     "word": "Dragon",
-    "card_name": "Dragon",
-    "scryfall_uri": "https://scryfall.com/card/tund/4/dragon?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/6/8/6819b8c9-73a3-4e8e-ad7a-95cffabf873a.jpg?1684573320",
+    "card_name": "Shivan Dragon",
+    "scryfall_uri": "https://scryfall.com/card/fdn/206/shivan-dragon?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/1/f/1fcff1e0-2745-448d-a27b-e31719e222e9.jpg?1730489362",
     "raw_path": "art_raw\\c-d_dragon.jpg",
     "webp_path": "art_webp\\c-d_dragon.webp",
     "status": "ok"
@@ -42,9 +42,9 @@
   {
     "id": "c-e",
     "word": "Elf",
-    "card_name": "Arbor Elf",
-    "scryfall_uri": "https://scryfall.com/card/a25/160/arbor-elf?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/4/b/4b81165e-f091-4211-8b47-5ea6868b0d4c.jpg?1562435427",
+    "card_name": "Llanowar Elves",
+    "scryfall_uri": "https://scryfall.com/card/fdn/227/llanowar-elves?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/6/a/6a0b230b-d391-4998-a3f7-7b158a0ec2cd.jpg?1731652605",
     "raw_path": "art_raw\\c-e_elf.jpg",
     "webp_path": "art_webp\\c-e_elf.webp",
     "status": "ok"
@@ -52,9 +52,9 @@
   {
     "id": "c-f",
     "word": "Faerie",
-    "card_name": "Faerie",
-    "scryfall_uri": "https://scryfall.com/card/tfdn/9/faerie?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/d/1/d1c0556e-ba3c-4a8e-b704-8eaa7c4dba1c.jpg?1732803358",
+    "card_name": "Spellstutter Sprite",
+    "scryfall_uri": "https://scryfall.com/card/mma/65/spellstutter-sprite?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/3/8/3899605d-2203-4ab6-9ff5-69490382eea4.jpg?1561966876",
     "raw_path": "art_raw\\c-f_faerie.jpg",
     "webp_path": "art_webp\\c-f_faerie.webp",
     "status": "ok"
@@ -62,9 +62,9 @@
   {
     "id": "c-g",
     "word": "Giant",
-    "card_name": "Giant",
-    "scryfall_uri": "https://scryfall.com/card/teld/10/giant?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/3/c/3c1debc4-0b12-4848-b551-90680ab8c0ab.jpg?1572489176",
+    "card_name": "Borderland Behemoth",
+    "scryfall_uri": "https://scryfall.com/card/cm2/87/borderland-behemoth?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/e/4/e4cbde6a-fbc8-403a-98ad-769d25aa4732.jpg?1562276469",
     "raw_path": "art_raw\\c-g_giant.jpg",
     "webp_path": "art_webp\\c-g_giant.webp",
     "status": "ok"
@@ -72,9 +72,9 @@
   {
     "id": "c-h",
     "word": "Hydra",
-    "card_name": "Hydra",
-    "scryfall_uri": "https://scryfall.com/card/tznr/9/hydra?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/f/2/f2ad0395-190d-4779-81b7-2832dc257828.jpg?1604194909",
+    "card_name": "Primordial Hydra",
+    "scryfall_uri": "https://scryfall.com/card/m13/183/primordial-hydra?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/9/3/937deb52-8888-4298-9ae5-0361c6fdbba2.jpg?1562557233",
     "raw_path": "art_raw\\c-h_hydra.jpg",
     "webp_path": "art_webp\\c-h_hydra.webp",
     "status": "ok"
@@ -82,9 +82,9 @@
   {
     "id": "c-i",
     "word": "Imp",
-    "card_name": "Imp",
-    "scryfall_uri": "https://scryfall.com/card/tmkm/7/imp?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/4/7/47a1385b-2be2-49a8-8400-186cd5525dad.jpg?1706217208",
+    "card_name": "Bog Imp",
+    "scryfall_uri": "https://scryfall.com/card/9ed/116/bog-imp?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/8/4/846f5cda-3d93-4dfd-b1c3-1dff7b814d98.jpg?1562737863",
     "raw_path": "art_raw\\c-i_imp.jpg",
     "webp_path": "art_webp\\c-i_imp.webp",
     "status": "ok"
@@ -92,9 +92,9 @@
   {
     "id": "c-j",
     "word": "Jellyfish",
-    "card_name": "Numbing Jellyfish",
-    "scryfall_uri": "https://scryfall.com/card/ust/42/numbing-jellyfish?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/7/5/752537c6-ee47-46c5-a6c7-cbf16e3a1dcf.jpg?1562919650",
+    "card_name": "Man-o'-War",
+    "scryfall_uri": "https://scryfall.com/card/dmr/58/man-o-war?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/a/1/a1ef40d5-c287-4229-8059-3505d9f251ca.jpg?1675199356",
     "raw_path": "art_raw\\c-j_jellyfish.jpg",
     "webp_path": "art_webp\\c-j_jellyfish.webp",
     "status": "ok"
@@ -102,9 +102,9 @@
   {
     "id": "c-k",
     "word": "Knight",
-    "card_name": "Knight",
-    "scryfall_uri": "https://scryfall.com/card/ttsr/5/knight?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/c/3/c31ce82f-6c4a-4986-be1e-032348504ad6.jpg?1641306027",
+    "card_name": "White Knight",
+    "scryfall_uri": "https://scryfall.com/card/ddg/9/white-knight?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/6/6/660f69ef-c04f-4f53-80e6-8190549ab12a.jpg?1562916342",
     "raw_path": "art_raw\\c-k_knight.jpg",
     "webp_path": "art_webp\\c-k_knight.webp",
     "status": "ok"
@@ -112,9 +112,9 @@
   {
     "id": "c-l",
     "word": "Lion",
-    "card_name": "Bronzehide Lion",
-    "scryfall_uri": "https://scryfall.com/card/thb/210/bronzehide-lion?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/8/f/8fdafadb-fa04-4282-b576-b85e79c242c9.jpg?1581480993",
+    "card_name": "Savannah Lions",
+    "scryfall_uri": "https://scryfall.com/card/fdn/146/savannah-lions?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/9/c/9c9ac1bc-cdf3-4fa6-8319-a7ea164e9e47.jpg?1731652622",
     "raw_path": "art_raw\\c-l_lion.jpg",
     "webp_path": "art_webp\\c-l_lion.webp",
     "status": "ok"
@@ -122,9 +122,9 @@
   {
     "id": "c-m",
     "word": "Merfolk",
-    "card_name": "Merfolk",
-    "scryfall_uri": "https://scryfall.com/card/fj22/14/merfolk?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/d/4/d44274b6-b8d0-421c-96ff-ae3b03204bce.jpg?1681244811",
+    "card_name": "Lord of Atlantis",
+    "scryfall_uri": "https://scryfall.com/card/tsb/24/lord-of-atlantis?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/a/9/a9407b60-8921-4531-bdbe-9a82aaa38d28.jpg?1562781744",
     "raw_path": "art_raw\\c-m_merfolk.jpg",
     "webp_path": "art_webp\\c-m_merfolk.webp",
     "status": "ok"
@@ -142,9 +142,9 @@
   {
     "id": "c-o",
     "word": "Ox",
-    "card_name": "Ox",
-    "scryfall_uri": "https://scryfall.com/card/tclb/13/ox?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/6/6/6655f22c-963f-42d6-b45c-8ea5fb256785.jpg?1675455839",
+    "card_name": "Yoked Ox",
+    "scryfall_uri": "https://scryfall.com/card/m20/41/yoked-ox?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/a/7/a73f186b-c897-4a98-bc25-8e4aa348d8c9.jpg?1592516244",
     "raw_path": "art_raw\\c-o_ox.jpg",
     "webp_path": "art_webp\\c-o_ox.webp",
     "status": "ok"
@@ -152,24 +152,29 @@
   {
     "id": "c-p",
     "word": "Phoenix",
-    "card_name": "Arclight Phoenix",
-    "scryfall_uri": "https://scryfall.com/card/rvr/100/arclight-phoenix?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/d/e/def7f05b-6e63-4828-a92c-ce7921bbdf4e.jpg?1702429490",
+    "card_name": "Rekindling Phoenix",
+    "scryfall_uri": "https://scryfall.com/card/ncc/273/rekindling-phoenix?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/1/a/1a9945ec-0996-434e-b177-97203eabaf24.jpg?1673484390",
     "raw_path": "art_raw\\c-p_phoenix.jpg",
     "webp_path": "art_webp\\c-p_phoenix.webp",
     "status": "ok"
   },
   {
     "id": "c-q",
-    "word": "Quetzal",
-    "status": "not_found"
+    "word": "Qu",
+    "card_name": "Acquire",
+    "scryfall_uri": "https://scryfall.com/card/5dn/21/acquire?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/9/9/993957c7-5d61-4c98-826d-b657aed667e1.jpg?1562878704",
+    "raw_path": "art_raw\\c-q_qu.jpg",
+    "webp_path": "art_webp\\c-q_qu.webp",
+    "status": "ok"
   },
   {
     "id": "c-r",
     "word": "Rat",
-    "card_name": "Rat",
-    "scryfall_uri": "https://scryfall.com/card/tfdn/14/rat?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/5/c/5cad84b0-2bbf-479c-ae46-f725892d04d1.jpg?1730485624",
+    "card_name": "Pack Rat",
+    "scryfall_uri": "https://scryfall.com/card/rtr/73/pack-rat?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/1/7/170693f5-13db-4191-99b1-e527ffb5b88e.jpg?1562783180",
     "raw_path": "art_raw\\c-r_rat.jpg",
     "webp_path": "art_webp\\c-r_rat.webp",
     "status": "ok"
@@ -177,9 +182,9 @@
   {
     "id": "c-s",
     "word": "Spider",
-    "card_name": "Spider",
-    "scryfall_uri": "https://scryfall.com/card/tjou/5/spider?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/7/a/7a0275af-708d-4c43-b226-c88cb9a8054c.jpg?1674379372",
+    "card_name": "Giant Spider",
+    "scryfall_uri": "https://scryfall.com/card/dmr/163/giant-spider?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/2/1/213c9202-b6f4-43ab-b57f-b97a1da5e263.jpg?1675200431",
     "raw_path": "art_raw\\c-s_spider.jpg",
     "webp_path": "art_webp\\c-s_spider.webp",
     "status": "ok"
@@ -187,9 +192,9 @@
   {
     "id": "c-t",
     "word": "Turtle",
-    "card_name": "Aegis Turtle",
-    "scryfall_uri": "https://scryfall.com/card/fdn/150/aegis-turtle?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/c/7/c7f2014a-fbc9-447c-a440-e06d01066bb9.jpg?1730489163",
+    "card_name": "Meandering Towershell",
+    "scryfall_uri": "https://scryfall.com/card/ktk/141/meandering-towershell?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/a/9/a945b43d-39bc-4ce4-be03-0109e1a681b1.jpg?1562791660",
     "raw_path": "art_raw\\c-t_turtle.jpg",
     "webp_path": "art_webp\\c-t_turtle.webp",
     "status": "ok"
@@ -197,9 +202,9 @@
   {
     "id": "c-u",
     "word": "Unicorn",
-    "card_name": "Adarkar Unicorn",
-    "scryfall_uri": "https://scryfall.com/card/ice/1/adarkar-unicorn?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/0/b/0ba7526f-dba8-4483-b925-946164fc0ae9.jpg?1587911477",
+    "card_name": "Pearled Unicorn",
+    "scryfall_uri": "https://scryfall.com/card/5ed/50/pearled-unicorn?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/c/e/ce33ef5b-a0ff-459c-a9d4-a0a00ac66b31.jpg?1593984499",
     "raw_path": "art_raw\\c-u_unicorn.jpg",
     "webp_path": "art_webp\\c-u_unicorn.webp",
     "status": "ok"
@@ -207,9 +212,9 @@
   {
     "id": "c-v",
     "word": "Vampire",
-    "card_name": "Vampire",
-    "scryfall_uri": "https://scryfall.com/card/tzen/6/vampire?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/9/6/969eff58-d91e-49e2-a1e1-8f32b4598810.jpg?1562636856",
+    "card_name": "Vampire Nighthawk",
+    "scryfall_uri": "https://scryfall.com/card/fdn/186/vampire-nighthawk?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/0/a/0a1934ab-3171-4fc6-8033-ad998899ba73.jpg?1730489287",
     "raw_path": "art_raw\\c-v_vampire.jpg",
     "webp_path": "art_webp\\c-v_vampire.webp",
     "status": "ok"
@@ -217,9 +222,9 @@
   {
     "id": "c-w",
     "word": "Wolf",
-    "card_name": "Human // Wolf",
-    "scryfall_uri": "https://scryfall.com/card/f12/1a/human-wolf?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/3/a/3a98c51f-c55c-4bd9-853b-65b8bad5a29f.jpg?1737835883",
+    "card_name": "Young Wolf",
+    "scryfall_uri": "https://scryfall.com/card/inr/227/young-wolf?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/e/d/ed2ca825-b029-495f-83fc-54366229d417.jpg?1736468463",
     "raw_path": "art_raw\\c-w_wolf.jpg",
     "webp_path": "art_webp\\c-w_wolf.webp",
     "status": "ok"
@@ -237,9 +242,9 @@
   {
     "id": "c-y",
     "word": "Yeti",
-    "card_name": "Cragsmasher Yeti",
-    "scryfall_uri": "https://scryfall.com/card/mom/333/cragsmasher-yeti?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/e/e/ee7a4ccb-c0c9-491f-9475-e78895fa9d03.jpg?1682206557",
+    "card_name": "Ohran Yeti",
+    "scryfall_uri": "https://scryfall.com/card/csp/93/ohran-yeti?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/8/d/8d6cfa21-75b1-4380-b0fc-a7450699660f.jpg?1593275300",
     "raw_path": "art_raw\\c-y_yeti.jpg",
     "webp_path": "art_webp\\c-y_yeti.webp",
     "status": "ok"
@@ -247,11 +252,51 @@
   {
     "id": "c-z",
     "word": "Zombie",
-    "card_name": "Snake // Zombie",
-    "scryfall_uri": "https://scryfall.com/card/cc2/9/snake-zombie?utm_source=api",
-    "art_url": "https://cards.scryfall.io/art_crop/front/1/3/13e4832d-8530-4b85-b738-51d0c18f28ec.jpg?1651951882",
+    "card_name": "Gravecrawler",
+    "scryfall_uri": "https://scryfall.com/card/tdc/93/gravecrawler?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/6/9/6987d609-ba0f-42bf-9b61-bdfb943c03b5.jpg?1743206046",
     "raw_path": "art_raw\\c-z_zombie.jpg",
     "webp_path": "art_webp\\c-z_zombie.webp",
+    "status": "ok"
+  },
+  {
+    "id": "c-k",
+    "word": "Kavu",
+    "card_name": "Flametongue Kavu",
+    "scryfall_uri": "https://scryfall.com/card/dmr/120/flametongue-kavu?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/1/b/1b3a5139-3341-409e-be33-184897c7398e.jpg?1675199972",
+    "raw_path": "art_raw\\c-k_kavu.jpg",
+    "webp_path": "art_webp\\c-k_kavu.webp",
+    "status": "ok"
+  },
+  {
+    "id": "c-g",
+    "word": "Goblin",
+    "card_name": "Goblin Guide",
+    "scryfall_uri": "https://scryfall.com/card/2xm/127/goblin-guide?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/3/c/3c0f5411-1940-410f-96ce-6f92513f753a.jpg?1599706366",
+    "raw_path": "art_raw\\c-g_goblin.jpg",
+    "webp_path": "art_webp\\c-g_goblin.webp",
+    "status": "ok"
+  },
+  {
+    "id": "c-q",
+    "word": "Qu",
+    "card_name": "Acquire",
+    "scryfall_uri": "https://scryfall.com/card/5dn/21/acquire?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/9/9/993957c7-5d61-4c98-826d-b657aed667e1.jpg?1562878704",
+    "raw_path": "art_raw\\c-q_qu.jpg",
+    "webp_path": "art_webp\\c-q_qu.webp",
+    "status": "ok"
+  },
+  {
+    "id": "c-n",
+    "word": "Noggle",
+    "card_name": "Noggle Bandit",
+    "scryfall_uri": "https://scryfall.com/card/eve/106/noggle-bandit?utm_source=api",
+    "art_url": "https://cards.scryfall.io/art_crop/front/5/5/552c9c66-8023-41ef-8d4f-3b0dc30743f3.jpg?1562912765",
+    "raw_path": "art_raw\\c-n_noggle.jpg",
+    "webp_path": "art_webp\\c-n_noggle.webp",
     "status": "ok"
   }
 ]

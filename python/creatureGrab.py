@@ -29,39 +29,123 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 # --- Flashcards (subset needed for fetching) ---------------------------------
 # Source: Provided TypeScript array (id, word)
 FLASHCARDS: List[Dict[str, str]] = [
-    {"id": "c-a", "word": "Angel"},
-    {"id": "c-b", "word": "Beast"},
-    {"id": "c-c", "word": "Cat"},
-    {"id": "c-d", "word": "Dragon"},
-    {"id": "c-e", "word": "Elf"},
-    {"id": "c-f", "word": "Faerie"},
-    {"id": "c-g", "word": "Giant"},
-    {"id": "c-h", "word": "Hydra"},
-    {"id": "c-i", "word": "Imp"},
-    {"id": "c-j", "word": "Jellyfish"},
-    {"id": "c-k", "word": "Knight"},
-    {"id": "c-l", "word": "Lion"},
-    {"id": "c-m", "word": "Merfolk"},
-    {"id": "c-n", "word": "Nighthawk"},
-    {"id": "c-o", "word": "Ox"},
-    {"id": "c-p", "word": "Phoenix"},
-    {"id": "c-q", "word": "Quetzal"},
-    {"id": "c-r", "word": "Rat"},
-    {"id": "c-s", "word": "Spider"},
-    {"id": "c-t", "word": "Turtle"},
-    {"id": "c-u", "word": "Unicorn"},
-    {"id": "c-v", "word": "Vampire"},
-    {"id": "c-w", "word": "Wolf"},
-    {"id": "c-x", "word": "Xantid"},
-    {"id": "c-y", "word": "Yeti"},
-    {"id": "c-z", "word": "Zombie"},
+     {"id": "c-a", "word": "Angel"},
+     {"id": "c-b", "word": "Beast"},
+     {"id": "c-c", "word": "Cat"},
+     {"id": "c-d", "word": "Dragon"},
+     {"id": "c-e", "word": "Elf"},
+     {"id": "c-f", "word": "Faerie"},
+     {"id": "c-g", "word": "Giant"},
+     {"id": "c-h", "word": "Hydra"},
+     {"id": "c-i", "word": "Imp"},
+     {"id": "c-j", "word": "Jellyfish"},
+     {"id": "c-k", "word": "Knight"},
+     {"id": "c-l", "word": "Lion"},
+     {"id": "c-m", "word": "Merfolk"},
+     {"id": "c-n", "word": "Nighthawk"},
+     {"id": "c-o", "word": "Ox"},
+     {"id": "c-p", "word": "Phoenix"},
+     {"id": "c-q", "word": "Qu"},
+     {"id": "c-r", "word": "Rat"},
+     {"id": "c-s", "word": "Spider"},
+     {"id": "c-t", "word": "Turtle"},
+     {"id": "c-u", "word": "Unicorn"},
+     {"id": "c-v", "word": "Vampire"},
+     {"id": "c-w", "word": "Wolf"},
+     {"id": "c-x", "word": "Xantid"},
+     {"id": "c-y", "word": "Yeti"},
+     {"id": "c-z", "word": "Zombie"},
+     {"id": "c-k", "word": "Kavu"},
+     {"id": "c-g", "word": "Goblin"},
+     {"id": "c-q", "word": "Qu"},
+{"id": "c-n", "word": "Noggle"},
 ]
 
 # Optional: nudge ambiguous words to a well-known exact card to improve art results
 PREFERRED_EXACT: Dict[str, str] = {
-    # Helpful overrides (feel free to add/tweak)
-    "Nighthawk": "Vampire Nighthawk",
-    "Xantid": "Xantid Swarm",
+    # Angels
+    "Angel": "Serra Angel",  # The most iconic angel ever
+    
+    # Beasts
+    "Beast": "Ravenous Baloth",  # Or "Thragtusk" for modern players
+    
+    # Cats
+    "Cat": "Savannah Lions",  # Classic 2/1 for W
+    
+    # Dragons
+    "Dragon": "Shivan Dragon",  # The original iconic dragon
+    
+    # Elves
+    "Elf": "Llanowar Elves",  # Most iconic mana dork
+    
+    # Faeries
+    "Faerie": "Spellstutter Sprite",  # Iconic from Lorwyn
+    
+    # Giants
+    "Giant": "Borderland Behemoth",  # Or "Hammerfist Giant"
+    
+    # Hydras
+    "Hydra": "Primordial Hydra",  # Classic hydra with X cost
+    
+    # Imps
+    "Imp": "Bog Imp",  # Simple classic imp
+    
+    # Jellyfish
+    "Jellyfish": "Man-o'-War",  # THE iconic jellyfish
+    
+    # Knights
+    "Knight": "White Knight",  # Or "Black Knight" - mirror classics
+    
+    # Lions
+    "Lion": "Savannah Lions",  # Same as Cat - it's a lion specifically
+    
+    # Merfolk
+    "Merfolk": "Lord of Atlantis",  # Iconic merfolk lord
+    
+    # Nighthawks
+    "Nighthawk": "Vampire Nighthawk",  # Perfect
+    
+    # Oxen
+    "Ox": "Yoked Ox",  # Not many options here
+    
+    # Phoenix
+    "Phoenix": "Rekindling Phoenix",  # Or "Chandra's Phoenix"
+    
+    # Rats
+    "Rat": "Pack Rat",  # Extremely iconic and powerful
+    
+    # Spiders
+    "Spider": "Giant Spider",  # Classic core set staple
+    
+    # Turtles
+    "Turtle": "Meandering Towershell",  # Meme-tier iconic
+    
+    # Unicorns
+    "Unicorn": "Pearled Unicorn",  # Classic alpha card
+    
+    # Vampires
+    "Vampire": "Vampire Nighthawk",  # Or "Bloodghast"
+    
+    # Wolves
+    "Wolf": "Young Wolf",  # Iconic undying wolf
+    
+    # Xantids
+    "Xantid": "Xantid Swarm",  # Perfect
+    
+    # Yetis
+    "Yeti": "Ohran Yeti",  # Not many iconic yetis
+    
+    # Zombies
+    "Zombie": "Gravecrawler",  # Iconic recursive zombie
+    
+    # Kavu
+    "Kavu": "Flametongue Kavu",  # THE most iconic kavu
+    
+    # Goblins
+    "Goblin": "Goblin Guide",  # Or "Goblin Lackey" for vintage vibes
+    
+    # Noggles
+    "Noggle": "Noggle Bandit",  # Shadowmoor's weird horse people
 }
 
 # --- Config ------------------------------------------------------------------
@@ -198,7 +282,7 @@ def main():
             report.append({"id": cid, "word": word, "status": "download_failed"})
             continue
 
-        base = f"{cid}_{safe_filename(word)}"
+        base = f"{cid}_{safe_filename(word)}".lower()
         raw_path = os.path.join(RAW_DIR, base + os.path.splitext(art_url.split('?')[0])[-1])
         webp_path = os.path.join(WEBP_DIR, base + ".webp")
 
@@ -222,7 +306,7 @@ def main():
             "scryfall_uri": data.get("scryfall_uri", ""),
             "art_url": art_url,
             "raw_path": raw_path,
-            "webp_path": webp_path,
+            "webp_path": webp_path.lower(),
             "status": status,
         })
 

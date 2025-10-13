@@ -66,11 +66,11 @@ export const creaturesCards: Flashcard[] = [
   {
     id: 'c-g',
     letter: 'G',
-    word: 'Giant',
-    rhyme: 'Giants stand so tall, biggest of them all',
-    definition: 'An enormous person who towers above',
+    word: 'Goblin',
+    rhyme: 'Goblins zip and zoom, laughing “boom boom boom!”',
+    definition: 'A small, sneaky rascal who loves pranks',
     color: 'from-stone-300 to-gray-400',
-    imageUrl: '/images/art_webp/c-g_giant.webp'
+    imageUrl: '/images/art_webp/c-g_goblin.webp'
   },
   {
     id: 'c-h',
@@ -102,11 +102,11 @@ export const creaturesCards: Flashcard[] = [
   {
     id: 'c-k',
     letter: 'K',
-    word: 'Knight',
-    rhyme: 'Knights in armor bright, ready for a fight',
-    definition: 'A brave warrior who protects others',
+    word: 'Kavu',
+    rhyme: 'Kavu stomp the ground, roaring with a sound',
+    definition: 'A tough lizard-beast that guards the wilds',
     color: 'from-slate-300 to-zinc-400',
-    imageUrl: '/images/art_webp/c-k_knight.webp'
+    imageUrl: '/images/art_webp/c-k_kavu.webp'
   },
   {
     id: 'c-l',
@@ -129,11 +129,11 @@ export const creaturesCards: Flashcard[] = [
   {
     id: 'c-n',
     letter: 'N',
-    word: 'Nighthawk',
-    rhyme: 'Nighthawks swoop and dive, keeping dreams alive',
-    definition: 'A bird that flies in the dark',
+    word: 'Noggle',
+    rhyme: 'Noggles trot and scheme, quick with a clever dream',
+    definition: 'A donkey-faced trickster who loves puzzles',
     color: 'from-slate-400 to-gray-500',
-    imageUrl: '/images/art_webp/c-n_nighthawk.webp'
+    imageUrl: '/images/art_webp/c-n_noggle.webp'
   },
   {
     id: 'c-o',
@@ -156,12 +156,13 @@ export const creaturesCards: Flashcard[] = [
   {
     id: 'c-q',
     letter: 'Q',
-    word: 'Quetzal',
-    rhyme: 'Quetzals shine and gleam, like a rainbow dream',
-    definition: 'A beautiful bird with colorful feathers',
+    word: 'Qu',
+    rhyme: 'Qu love tasty stew, “Mmm, I eat this too?”',
+    definition: 'A quirky gourmand from Final Fantasy IX who loves trying new foods',
     color: 'from-emerald-300 to-teal-400',
-    imageUrl: '/images/art_webp/c-q_quetzal.webp'
+    imageUrl: '/images/art_webp/c-q_qu.webp'
   },
+
   {
     id: 'c-r',
     letter: 'R',
