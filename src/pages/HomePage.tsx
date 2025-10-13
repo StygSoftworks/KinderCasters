@@ -43,13 +43,15 @@ export default function HomePage() {
         />
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
+          <Link  to="/portal">
+          
           <FeatureCard
             icon={<Sparkles className="w-12 h-12" />}
             title="78 Flashcards"
             description="Learn all 26 letters plus numbers 0-9 with magical creatures and heroes"
             gradient="from-green-400 to-emerald-500"
           />
-
+</Link>
           <FeatureCard
             icon={<BookOpen className="w-12 h-12" />}
             title="Interactive Learning"

@@ -42,6 +42,9 @@ export default function Flashcards() {
           {cards.map((card) => {
             const displayLetter = 'letter' in card ? card.letter : card.number;
             const imageUrl = 'imageUrl' in card ? card.imageUrl : undefined;
+            console.log(card);
+
+           
 
             return (
               <FlashcardItem
