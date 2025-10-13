@@ -243,7 +243,7 @@ export const creaturesCards: Flashcard[] = [
     color: 'from-gray-400 to-stone-500',
     imageUrl: '/images/art_webp/c-z_zombie.webp'
   }
->>>>>>> Stashed changes
+
 ];
 
 export const magicWordsCards: Flashcard[] = [
