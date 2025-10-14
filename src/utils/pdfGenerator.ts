@@ -131,57 +131,62 @@ export async function generateFlashcardPDF(cards: Flashcard[], categoryTitle: st
     pdf.text(defLines, x + 5, y + 40 + rhymeHeight);
   };
 
-  for (const card of cards) {
-    const displayText = 'letter' in card ? card.letter : (card as any).number;
-    const cardData: CardData = {
-      displayText,
-      word: card.word,
-      rhyme: card.rhyme,
-      definition: card.definition,
-      color: card.color
-    };
+  const totalPages = Math.ceil(cards.length / cardsPerPage);
+  let isFirstPage = true;
 
-    const cardIndex = cards.indexOf(card);
-    if (cardIndex > 0 && cardIndex % cardsPerPage === 0) {
+  for (let pageNum = 0; pageNum < totalPages; pageNum++) {
+    if (!isFirstPage) {
       pdf.addPage();
     }
+    isFirstPage = false;
 
-    const positionOnPage = cardIndex % cardsPerPage;
-    const row = Math.floor(positionOnPage / cardsPerRow);
-    const col = positionOnPage % cardsPerRow;
+    const startIdx = pageNum * cardsPerPage;
+    const endIdx = Math.min(startIdx + cardsPerPage, cards.length);
 
-    const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
-    const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
+    for (let i = startIdx; i < endIdx; i++) {
+      const card = cards[i];
+      const displayText = 'letter' in card ? card.letter : (card as any).number;
+      const cardData: CardData = {
+        displayText,
+        word: card.word,
+        rhyme: card.rhyme,
+        definition: card.definition,
+        color: card.color
+      };
 
-    drawCardFront(x, y, cardData);
-  }
+      const positionOnPage = i - startIdx;
+      const row = Math.floor(positionOnPage / cardsPerRow);
+      const col = positionOnPage % cardsPerRow;
 
-  pdf.addPage();
+      const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
+      const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
 
-  for (const card of cards) {
-    const displayText = 'letter' in card ? card.letter : (card as any).number;
-    const cardData: CardData = {
-      displayText,
-      word: card.word,
-      rhyme: card.rhyme,
-      definition: card.definition,
-      color: card.color
-    };
-
-    const cardIndex = cards.indexOf(card);
-    if (cardIndex > 0 && cardIndex % cardsPerPage === 0) {
-      pdf.addPage();
+      drawCardFront(x, y, cardData);
     }
 
-    const positionOnPage = cardIndex % cardsPerPage;
-    const row = Math.floor(positionOnPage / cardsPerRow);
-    const originalCol = positionOnPage % cardsPerRow;
-    const col = cardsPerRow - 1 - originalCol;
+    pdf.addPage();
 
-    const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
-    const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
+    for (let i = startIdx; i < endIdx; i++) {
+      const card = cards[i];
+      const displayText = 'letter' in card ? card.letter : (card as any).number;
+      const cardData: CardData = {
+        displayText,
+        word: card.word,
+        rhyme: card.rhyme,
+        definition: card.definition,
+        color: card.color
+      };
 
-    drawCardBack(x, y, cardData);
+      const positionOnPage = i - startIdx;
+      const row = Math.floor(positionOnPage / cardsPerRow);
+      const originalCol = positionOnPage % cardsPerRow;
+      const col = cardsPerRow - 1 - originalCol;
+
+      const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
+      const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
+
+      drawCardBack(x, y, cardData);
+    }
   }
 
   pdf.save(`${categoryTitle.replace(/\s+/g, '_')}_Flashcards.pdf`);
