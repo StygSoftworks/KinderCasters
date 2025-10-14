@@ -1,8 +1,9 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Printer } from 'lucide-react';
 import { creaturesCards, magicWordsCards, heroesVillainsCards, numberCards } from '../data/flashcards';
 import Navigation from '../components/Navigation';
 import FlashcardItem from '../components/FlashcardItem';
+import { generateFlashcardPDF } from '../utils/pdfGenerator';
 
 export default function Flashcards() {
   const { category } = useParams<{ category: string }>();
@@ -15,12 +16,16 @@ export default function Flashcards() {
 
   const { title, cards, bgGradient } = categoryData;
 
+  const handlePrintPDF = () => {
+    generateFlashcardPDF(cards, title);
+  };
+
   return (
     <div className={`min-h-screen bg-gradient-to-br ${bgGradient}`}>
       <Navigation />
 
       <div className="max-w-7xl mx-auto px-6 py-8">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
           <Link
             to="/portal"
             className="flex items-center gap-2 px-6 py-3 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400 text-gray-700 font-semibold"
@@ -33,8 +38,17 @@ export default function Flashcards() {
             {title}
           </h1>
 
-          <div className="text-sm text-gray-600 bg-white px-4 py-2 rounded-lg shadow">
-            {cards.length} cards
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handlePrintPDF}
+              className="flex items-center gap-2 px-6 py-3 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 text-gray-700 font-semibold"
+            >
+              <Printer className="w-5 h-5" />
+              Print PDF
+            </button>
+            <div className="text-sm text-gray-600 bg-white px-4 py-2 rounded-lg shadow">
+              {cards.length} cards
+            </div>
           </div>
         </div>
 
