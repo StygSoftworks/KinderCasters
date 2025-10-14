@@ -8,6 +8,8 @@ const CARD_WIDTH_MM = CARD_WIDTH_INCHES * MM_PER_INCH;
 const CARD_HEIGHT_MM = CARD_HEIGHT_INCHES * MM_PER_INCH;
 const MARGIN_MM = 10;
 const SPACING_MM = 5;
+const BACK_OFFSET_X_MM = 2;
+const BACK_OFFSET_Y_MM = 2;
 
 interface CardData {
   displayText: string;
@@ -182,8 +184,8 @@ export async function generateFlashcardPDF(cards: Flashcard[], categoryTitle: st
       const originalCol = positionOnPage % cardsPerRow;
       const col = cardsPerRow - 1 - originalCol;
 
-      const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
-      const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
+      const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM) + BACK_OFFSET_X_MM;
+      const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM) + BACK_OFFSET_Y_MM;
 
       drawCardBack(x, y, cardData);
     }
