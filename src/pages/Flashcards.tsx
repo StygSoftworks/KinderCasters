@@ -38,13 +38,10 @@ export default function Flashcards() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card) => {
             const displayLetter = 'letter' in card ? card.letter : card.number;
             const imageUrl = 'imageUrl' in card ? card.imageUrl : undefined;
-            console.log(card);
-
-
 
             return (
               <FlashcardItem
