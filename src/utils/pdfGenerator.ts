@@ -175,7 +175,8 @@ export async function generateFlashcardPDF(cards: Flashcard[], categoryTitle: st
 
     const positionOnPage = cardIndex % cardsPerPage;
     const row = Math.floor(positionOnPage / cardsPerRow);
-    const col = cardsPerRow - 1 - col;
+    const originalCol = positionOnPage % cardsPerRow;
+    const col = cardsPerRow - 1 - originalCol;
 
     const x = MARGIN_MM + col * (CARD_WIDTH_MM + SPACING_MM);
     const y = MARGIN_MM + row * (CARD_HEIGHT_MM + SPACING_MM);
