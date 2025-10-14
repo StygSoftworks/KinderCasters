@@ -8,8 +8,8 @@ const CARD_WIDTH_MM = CARD_WIDTH_INCHES * MM_PER_INCH;
 const CARD_HEIGHT_MM = CARD_HEIGHT_INCHES * MM_PER_INCH;
 const MARGIN_MM = 10;
 const SPACING_MM = 5;
-const BACK_OFFSET_X_MM = 65;
-const BACK_OFFSET_Y_MM = 7;
+const BACK_OFFSET_X_MM = 60;
+const BACK_OFFSET_Y_MM = 5;
 
 interface CardData {
   displayText: string;
